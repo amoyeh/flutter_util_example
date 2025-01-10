@@ -1,0 +1,26 @@
+{
+   "files.exclude": {
+      ".dart_tool/": true,
+      ".flutter-plugins": true,
+      ".flutter-plugins-dependencies": true,
+      ".metadata": true,
+      ".gitignore": true,
+      "pubspec.lock": true,
+      "build": true,
+      ".idea": true
+   },
+   "dart.lineLength": 250,
+   "[dart]": {
+      "editor.defaultFormatter": "Dart-Code.dart-code",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 3,
+      "editor.rulers": [250]
+   },
+   "fileGroup.groups": {
+      "search": {
+         "files": ["D:/work/project_active/memofan/flutter/memofan_app/lib/secs/search/com_import_form.dart"]
+      }
+   },
+   "markdown-preview-enhanced.plantumlJarPath": "D:/app/plantuml.jar",
+   "plantuml.jar": "D:/app/plantuml.jar"
+}

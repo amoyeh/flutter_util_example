@@ -1,0 +1,77 @@
+{
+   "emailPassWord": {
+      "email": {
+         "code": "emailInvalid",
+         "required": true,
+         "schema": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$"
+         }
+      },
+      "password": {
+         "code": "passwordInvalid",
+         "required": true,
+         "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 20
+         }
+      }
+   },
+   "signUpForm": {
+      "email": {
+         "code": "emailInvalid",
+         "required": true,
+         "schema": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$"
+         }
+      },
+      "password": {
+         "code": "passwordInvalid",
+         "required": true,
+         "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 20
+         }
+      },
+      "gender": {
+         "code": "genderInvalid",
+         "required": true,
+         "schema": {
+            "type": "string",
+            "enum": [
+               "m",
+               "f"
+            ]
+         }
+      },
+      "over18": {
+         "code": "over18Invalid",
+         "required": true,
+         "schema": {
+            "type": "boolean",
+            "const": true
+         }
+      },
+      "age": {
+         "code": "ageInvalid",
+         "required": true,
+         "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 150
+         }
+      },
+      "birthDate": {
+         "code": "birthDateInvalid",
+         "required": true,
+         "schema": {
+            "type": "string",
+            "pattern": "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$",
+            "description": "Date in DD/MM/YYYY format"
+         }
+      }
+   }
+}
